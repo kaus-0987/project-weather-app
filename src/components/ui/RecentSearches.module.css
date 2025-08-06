@@ -1,0 +1,45 @@
+.recentSearches {
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.recentSearches h4 {
+  margin-bottom: 0.8rem;
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.recentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.recentItem {
+  padding: 0.5rem 1rem;
+  background-color: var(--hover-bg);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  color: var(--text-color);
+}
+
+.recentItem:hover, 
+.recentItem:focus {
+  background-color: var(--primary-color);
+  color: white;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .recentSearches {
+    margin-top: 3rem;
+  }
+  
+  .recentItem {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+.weatherIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.weatherIcon:hover .iconImage {
+  transform: scale(1.1);
+}

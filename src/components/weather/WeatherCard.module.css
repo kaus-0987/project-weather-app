@@ -1,0 +1,57 @@
+.weatherCard {
+  background-color: var(--hover-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.icon {
+  margin: 0.5rem 0;
+  width: 50px;
+  height: 50px;
+}
+
+.temps {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.maxTemp {
+  font-weight: bold;
+}
+
+.minTemp {
+  color: var(--secondary-color);
+}
+
+.condition {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .weatherCard {
+    padding: 1.5rem;
+  }
+  
+  .date {
+    font-size: 1rem;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+}

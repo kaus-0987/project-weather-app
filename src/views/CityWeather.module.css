@@ -1,0 +1,25 @@
+.cityWeather {
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.cityName {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (min-width: 768px) {
+  .cityName {
+    font-size: 2.5rem;
+  }
+}

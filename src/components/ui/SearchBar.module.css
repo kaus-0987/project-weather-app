@@ -1,0 +1,75 @@
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.searchForm {
+  display: flex;
+  width: 100%;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.searchButton {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.searchButton:hover {
+  background-color: #0b5ed7;
+}
+
+.searchButton:focus {
+  outline: 2px solid white;
+  outline-offset: -2px;
+}
+
+.suggestionsList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow: var(--card-shadow);
+  z-index: 10;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestionItem {
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.suggestionItem:hover, 
+.suggestionItem:focus {
+  background-color: var(--hover-bg);
+  outline: none;
+}

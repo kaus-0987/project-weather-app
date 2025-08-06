@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: var(--transition);
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  background: linear-gradient(90deg, var(--primary-color), #0dcaf0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .logo h1 {
+    font-size: 1.8rem;
+  }
+}

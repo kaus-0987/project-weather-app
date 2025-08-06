@@ -1,0 +1,28 @@
+.forecast {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.forecast h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.forecastCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .forecast {
+    padding: 2rem;
+  }
+  
+  .forecastCards {
+    gap: 1.5rem;
+  }
+}
